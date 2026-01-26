@@ -1,13 +1,13 @@
 # # Viewing Python Tokenization Internals
 # -------------------------------------------------------------
-# import io
-# import tokenize
+import io
+import tokenize
 
-# code = "x = 5 + 3"
-# tokens = tokenize.generate_tokens(io.StringIO(code).readline)
+code = "x = 5 + 3"
+tokens = tokenize.generate_tokens(io.StringIO(code).readline)
 
-# for tok in tokens:
-#     print(tok)
+for tok in tokens:
+    print(tok)
 
 # # Abstract Syntax Tree (AST) Demonstration
 # -------------------------------------------------------------
@@ -21,6 +21,5 @@
 # Disassembly of Python Bytecode
 # -------------------------------------------------------------
 
-import os
-
-print(os.getcwd())
+# import os
+# print(os.getcwd())
