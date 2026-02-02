@@ -44,15 +44,17 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # # ──────────────────────────────────────────────
 # from shape.square import compute_area, compute_perimeter
 
-# result = compute_area(4)
-# print(f"Approach 3 — compute_area(4) = {result}")
+# print(f"Approach 3 — compute_area(4) = {compute_area(4)}")
+# print(f"Approach 3 — compute_perimeter(3) = {compute_perimeter(3)}")
 
 
 # # ──────────────────────────────────────────────
 # # 📌 Snippet 5 — Approach 4: Wildcard (avoid)
 # # ──────────────────────────────────────────────
-# # from shape.square import *  # Namespace pollution risk!
+# from shape.square import *  # Namespace pollution risk!
 
+# print(f"Approach 4 — compute_area(4) = {compute_area(4)}")
+# print(f"Approach 4 — compute_perimeter(3) = {compute_perimeter(3)}")
 
 # # ──────────────────────────────────────────────
 # # 📌 Snippet 6 — Namespace Pollution Demo
@@ -64,32 +66,40 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # print(f"circle_area(4) = {circle_area(4):.4f}")
 
 # # Without aliases, the second import silently overwrites the first:
-# # from shape.square import *    # brings in compute_area, compute_perimeter
-# # from shape.circle import *    # also brings in compute_area, compute_perimeter
-# # result = compute_area(4)      # Which version is this? circle!
+# from shape.square import *    # brings in compute_area, compute_perimeter
+# from shape.circle import *    # also brings in compute_area, compute_perimeter
+# result = compute_area(4)      # Which version is this? circle!
+# print(result)
 
 
 # # ──────────────────────────────────────────────
-# # 📌 Snippet 7 — The __name__ Guard
+# # 📌 Method 1: PYTHONPATH Environment Variable
+# # ──────────────────────────────────────────────
+# from shape.square import compute_area
+
+# print(compute_area(3))
+
+# # ──────────────────────────────────────────────
+# # 📌 Method 2: .pth Files
+# # ──────────────────────────────────────────────
+# from shape.square import compute_area
+
+# print(compute_area(4))
+
+# # ──────────────────────────────────────────────
+# # 📌 Method 3: Editable Install pip3 install -e .
+# # ──────────────────────────────────────────────
+# from shape2.shape2.square import compute_area
+
+# print(compute_area(4))
+
+# # ──────────────────────────────────────────────
+# # 📌 Snippet 10 — The __name__ Guard
 # # ──────────────────────────────────────────────
 # # This pattern is demonstrated in shape/triangle.py.
 # # When a module is run directly, __name__ == "__main__".
 # # When imported, __name__ is set to the module's name.
 
-# import math
+# from shape.triangle import compute_area
 
-
-# def compute_triangle_area(base: float, height: float) -> float:
-#     return 0.5 * base * height
-
-
-# def compute_triangle_perimeter(side1: float, side2: float, side3: float) -> float:
-#     return side1 + side2 + side3
-
-
-# if __name__ == "__main__":
-#     # Only runs when executed directly, not when imported
-#     print(f"\nTriangle area (4.5, 5.6) = {compute_triangle_area(4.5, 5.6)}")
-#     print(f"Triangle area (4.7, 6.0) = {compute_triangle_area(4.7, 6.0)}")
-#     print(f"Triangle area (4.8, 7.1) = {compute_triangle_area(4.8, 7.1)}")
-#     print(f"Triangle area (4.9, 8.45) = {compute_triangle_area(4.9, 8.45)}")
+# print(compute_area(3,2))
