@@ -10,28 +10,28 @@ Section: Iterables
 # What Are Iterables?
 # ============================================================
 
-# ──────────────────────────────────────────────
-# 📌 Snippet 17 — Iterable Types
-# ──────────────────────────────────────────────
-# Strings are iterable
-for char in "Hi":
-    print(char, end=" ")  # H i
-print()
+# # ──────────────────────────────────────────────
+# # 📌 Snippet 18 — Iterable Types
+# # ──────────────────────────────────────────────
+# # Strings are iterable
+# for char in "Hi":
+#     print(char, end=" ")  # H i
+# print()
 
-# Ranges are iterable
-for num in range(3):
-    print(num, end=" ")  # 0 1 2
-print()
+# # Ranges are iterable
+# for num in range(3):
+#     print(num, end=" ")  # 0 1 2
+# print()
 
-# Lists are iterable
-for item in [1, 2, 3]:
-    print(item, end=" ")  # 1 2 3
-print()
+# # Lists are iterable
+# for item in [1, 2, 3]:
+#     print(item, end=" ")  # 1 2 3
+# print()
 
-# Dictionaries are iterable (iterates over keys)
-for key in {"a": 1, "b": 2}:
-    print(key, end=" ")  # a b
-print()
+# # Dictionaries are iterable (iterates over keys)
+# for key in {"a": 1, "b": 2}:
+#     print(key, end=" ")  # a b
+# print()
 
 
 # # ============================================================
@@ -39,7 +39,7 @@ print()
 # # ============================================================
 
 # # ──────────────────────────────────────────────
-# # 📌 Snippet 18 — In-Place Operations
+# # 📌 Snippet 19 — In-Place Operations
 # # ──────────────────────────────────────────────
 # # In-place operations modify the original object
 # # and typically return None
@@ -57,7 +57,7 @@ print()
 
 
 # # ──────────────────────────────────────────────
-# # 📌 Snippet 19 — Out-of-Place Operations
+# # 📌 Snippet 20 — Out-of-Place Operations
 # # ──────────────────────────────────────────────
 # # Out-of-place operations return a new object
 # # and leave the original unchanged
