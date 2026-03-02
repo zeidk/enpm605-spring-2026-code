@@ -1,0 +1,76 @@
+' ================================================================================
+' Diagram 3: Activity Diagram -- UC-02: Robot Completes a Task
+' File: activity_complete_task.png
+' ================================================================================
+
+@startuml activity_complete_task
+!theme mono
+skinparam defaultFontSize 12
+skinparam shadowing false
+
+title UC-02: Robot Completes a Task
+
+start
+
+:Robot checks battery level against
+task.duration_s * drain_rate;
+
+if (Battery sufficient?) then (yes)
+    :Robot navigates to target zone;
+
+    :Robot picks up object at source zone;
+
+    :Robot delivers object to target zone;
+
+    :task.complete();
+    note right
+        Sets task.status = 'completed'
+        Triggers team.update_score(task.points)
+    end note
+
+    :robot.tasks_completed += 1;
+    :robot.status = 'active';
+
+    :Evaluate battery trigger rules;
+
+    if (battery < 10?) then (yes)
+        if (battery == 0?) then (yes)
+            :status = 'offline';
+        else (no)
+            :status = 'needs_recharge';
+        endif
+    else (no)
+        :status remains 'active';
+    endif
+
+else (no)
+    :Robot calls recharge();
+    note right
+        Sets battery = 100
+        Sets status = 'active'
+    end note
+
+    :Re-check battery against task drain;
+
+    if (Battery sufficient after recharge?) then (yes)
+        :Resume task execution
+        (return to navigate step);
+    else (no)
+        :task.cancel();
+        note right
+            Sets task.status = 'cancelled'
+            Robot returns to 'active'
+        end note
+    endif
+endif
+
+:Postconditions evaluated;
+note right
+    task.status in {'completed', 'cancelled'}
+    team.score updated (if completed)
+    robot.status updated per battery rules
+end note
+
+stop
+
+@enduml

@@ -1,0 +1,166 @@
+@startuml competition_class_diagram
+
+skinparam classAttributeIconSize 0
+skinparam classFontStyle bold
+skinparam defaultFontSize 12
+skinparam shadowing false
+skinparam linetype ortho
+!theme mono
+
+' ============================================================
+' Abstract Base Class: Robot
+' ============================================================
+abstract class Robot {
+    - name : String
+    - battery : int
+    - status : String
+    - tasksCompleted : int
+    - sensors : List<Sensor>
+    --
+    + getName() : String
+    + getBattery() : int
+    + setBattery(value : int) : void
+    + getStatus() : String
+    + setStatus(value : String) : void
+    + getTasksCompleted() : int
+    + getSensors() : List<Sensor>
+    --
+    + assignTask(task : Task) : void
+    + performTask(task : Task) : void
+    + recharge() : void
+    + {abstract} move(direction : String) : void
+}
+
+' ============================================================
+' Subclasses
+' ============================================================
+class MobileRobot {
+    - maxSpeed : double
+    - terrainType : String
+    --
+    + getMaxSpeed() : double
+    + getTerrainType() : String
+    --
+    + move(direction : String) : void
+}
+
+class ManipulatorRobot {
+    - armReach : double
+    - payloadCapacity : double
+    --
+    + getArmReach() : double
+    + getPayloadCapacity() : double
+    --
+    + move(direction : String) : void
+    + pickUp(obj : String) : void
+    + deliver(obj : String, zone : String) : void
+}
+
+' ============================================================
+' Sensor (Composition with Robot)
+' ============================================================
+class Sensor {
+    - sensorType : String
+    - rangeM : double
+    - accuracy : double
+    --
+    + getSensorType() : String
+    + getRangeM() : double
+    + setRangeM(value : double) : void
+    + getAccuracy() : double
+    + setAccuracy(value : double) : void
+    --
+    + read() : double
+    + calibrate(offset : double) : void
+    + equals(other : Sensor) : boolean
+    + toString() : String
+}
+
+' ============================================================
+' Task (Association with Robot)
+' ============================================================
+class Task {
+    - name : String
+    - priority : String
+    - durationS : double
+    - points : int
+    - status : String
+    --
+    + getName() : String
+    + getPriority() : String
+    + setPriority(value : String) : void
+    + getDurationS() : double
+    + getPoints() : int
+    + getStatus() : String
+    --
+    + assign(robot : Robot) : void
+    + complete() : void
+    + cancel() : void
+    + isComplete() : boolean
+}
+
+' ============================================================
+' Arena (Association with Robot)
+' ============================================================
+class Arena {
+    - name : String
+    - width : double
+    - height : double
+    - obstacles : List<Position>
+    - zones : Map<String, Rectangle>
+    --
+    + getName() : String
+    + getWidth() : double
+    + setWidth(value : double) : void
+    + getHeight() : double
+    + setHeight(value : double) : void
+    + getObstacles() : List<Position>
+    + getZones() : Map<String, Rectangle>
+    --
+    + isClear(x : double, y : double) : boolean
+    + getZone(name : String) : Rectangle
+    + addObstacle(x : double, y : double) : void
+}
+
+' ============================================================
+' Team (Aggregation with Robot)
+' ============================================================
+class Team {
+    - teamName : String
+    - robots : List<Robot>
+    - maxRobots : int
+    - score : int
+    --
+    + getTeamName() : String
+    + getRobots() : List<Robot>
+    + getMaxRobots() : int
+    + getScore() : int
+    --
+    + addRobot(robot : Robot) : void
+    + removeRobot(robot : Robot) : void
+    + totalBattery() : int
+    + getAvailableRobots() : List<Robot>
+    + updateScore(points : int) : void
+}
+
+' ============================================================
+' Relationships
+' ============================================================
+
+' Inheritance
+Robot <|-- MobileRobot
+Robot <|-- ManipulatorRobot
+
+' Composition: Robot owns Sensors
+Robot *-- "1..*" Sensor : owns >
+
+' Aggregation: Team manages Robots
+Team o-- "1..*" Robot : manages >
+
+' Association: Task assigned to Robot
+Task "0..*" -- "0..1" Robot : assigned to >
+
+' Association: Arena contains Robots
+Arena "1" -- "0..*" Robot : contains >
+
+@enduml

@@ -1,0 +1,60 @@
+@startuml sequence_assign_task
+!theme mono
+skinparam defaultFontSize 12
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+
+title UC-01: Assign a Task to a Robot
+
+actor "Team Manager\n(via code)" as Manager
+participant ":Team" as Team
+participant ":Robot" as Robot
+participant ":Task" as Task
+
+Manager -> Team : get_available_robots()
+activate Team
+Team --> Manager : list[Robot] with status='active'
+deactivate Team
+
+Manager -> Manager : select candidate robot
+
+note right of Manager
+    Check robot.battery >= 
+    task.duration_s * drain_rate
+end note
+
+alt robot.battery >= estimated drain
+    Manager -> Task : assign(robot)
+    activate Task
+
+    Task -> Task : check status == 'pending'
+
+    Task -> Robot : assign_task(task)
+    activate Robot
+
+    Robot -> Robot : check status == 'active'
+
+    alt status != 'active'
+        Robot --> Task : raise RuntimeError
+        Task --> Manager : propagate RuntimeError
+    else status == 'active'
+        Robot -> Robot : status = 'busy'
+        Robot --> Task : None
+        deactivate Robot
+    end
+
+    Task -> Task : status = 'in_progress'
+    Task --> Manager : None
+    deactivate Task
+
+else robot.battery < estimated drain
+    Manager -> Manager : skip to next candidate\nor raise RuntimeError
+end
+
+note over Task, Robot
+    **Postconditions:**
+    task.status == 'in_progress'
+    robot.status == 'busy'
+end note
+
+@enduml
