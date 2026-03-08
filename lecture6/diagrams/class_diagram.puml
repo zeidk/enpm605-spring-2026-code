@@ -15,7 +15,9 @@ abstract class Robot {
     - battery : int
     - status : String
     - tasksCompleted : int
+    - currentTask : Task
     - sensors : List<Sensor>
+    - team : Team
     --
     + getName() : String
     + getBattery() : int
@@ -23,7 +25,9 @@ abstract class Robot {
     + getStatus() : String
     + setStatus(value : String) : void
     + getTasksCompleted() : int
+    + getCurrentTask() : Task
     + getSensors() : List<Sensor>
+    + getTeam() : Team
     --
     + assignTask(task : Task) : void
     + performTask(task : Task) : void
@@ -93,19 +97,19 @@ class Task {
     + getPoints() : int
     + getStatus() : String
     --
-    + assign(robot : Robot) : void
     + complete() : void
     + cancel() : void
     + isComplete() : boolean
 }
 
 ' ============================================================
-' Arena (Association with Robot)
+' Arena (Aggregation with Robot)
 ' ============================================================
 class Arena {
     - name : String
     - width : double
     - height : double
+    - robots : List<Robot>
     - obstacles : List<Position>
     - zones : Map<String, Rectangle>
     --
@@ -114,9 +118,12 @@ class Arena {
     + setWidth(value : double) : void
     + getHeight() : double
     + setHeight(value : double) : void
+    + getRobots() : List<Robot>
     + getObstacles() : List<Position>
     + getZones() : Map<String, Rectangle>
     --
+    + addRobot(robot : Robot) : void
+    + removeRobot(robot : Robot) : void
     + isClear(x : double, y : double) : boolean
     + getZone(name : String) : Rectangle
     + addObstacle(x : double, y : double) : void
@@ -152,15 +159,15 @@ Robot <|-- MobileRobot
 Robot <|-- ManipulatorRobot
 
 ' Composition: Robot owns Sensors
-Robot *-- "1..*" Sensor : owns >
+Robot "1" *-- "1..*" Sensor : owns >
 
 ' Aggregation: Team manages Robots
-Team o-- "1..*" Robot : manages >
+Team "0..1" o-- "1..*" Robot : manages >
 
-' Association: Task assigned to Robot
-Task "0..*" -- "0..1" Robot : assigned to >
+' Aggregation: Arena contains Robots
+Arena "1" o-- "0..*" Robot : contains >
 
-' Association: Arena contains Robots
-Arena "1" -- "0..*" Robot : contains >
+' Association: Robot assigns Task
+Robot "0..1" --> "0..*" Task : assigns >
 
 @enduml
