@@ -1,0 +1,1954 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   contentStyleType="text/css"
+   data-diagram-type="CLASS"
+   height="953px"
+   preserveAspectRatio="none"
+   style="width:499px;height:953px;background:#FFFFFF;"
+   version="1.1"
+   viewBox="0 0 499 953"
+   width="499px"
+   zoomAndPan="magnify"
+   id="svg72"
+   sodipodi:docname="association-aggregation-composition.svg"
+   inkscape:version="1.4.3 (1:1.4.3+202512261035+0d15f75042)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview72"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.795383"
+     inkscape:cx="-352.66029"
+     inkscape:cy="399.80739"
+     inkscape:window-width="3840"
+     inkscape:window-height="941"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg72" />
+<?plantuml 1.2026.3beta4?>  <defs
+     id="defs1" />
+  <rect
+     fill="#ffffff"
+     height="329.375"
+     rx="2.5"
+     ry="2.5"
+     style="stroke:#000000;stroke-width:1;fill:none"
+     width="209.30859"
+     x="147.92999"
+     y="303.59"
+     id="rect1"
+     inkscape:export-filename="/home/zeid/github/docs/enpm605-spring-2026-docs/docs/source/_static/images/L7/l7_relationships_light.png"
+     inkscape:export-xdpi="350"
+     inkscape:export-ydpi="350" />
+  <circle
+     cx="229.05701"
+     cy="316.59"
+     fill="#ffffff"
+     style="stroke:#000000;stroke-width:1"
+     id="ellipse1"
+     r="8" />
+  <line
+     style="stroke:#000000;stroke-width:1"
+     x1="148.92999"
+     x2="356.23859"
+     y1="329.59"
+     y2="329.59"
+     id="line1" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="85.845703"
+     x="153.92999"
+     y="344.7287"
+     id="text2">-name : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="75.445297"
+     x="153.92999"
+     y="358.69739"
+     id="text3">-battery : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="88.6875"
+     x="153.92999"
+     y="372.6662"
+     id="text4">-status : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="128.60741"
+     x="153.92999"
+     y="386.63489"
+     id="text5">-tasksCompleted : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="115.5352"
+     x="153.92999"
+     y="400.6037"
+     id="text6">-currentTask : Task</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="144.2402"
+     x="153.92999"
+     y="414.57239"
+     id="text7">-sensors : List&lt;Sensor&gt;</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="80.888702"
+     x="153.92999"
+     y="428.5412"
+     id="text8">-team : Team</text>
+  <line
+     style="stroke:#000000;stroke-width:1"
+     x1="148.92999"
+     x2="356.23859"
+     y1="435.37119"
+     y2="435.37119"
+     id="line8" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="122.0098"
+     x="153.92999"
+     y="450.50989"
+     id="text9">+getName() : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="110.8535"
+     x="153.92999"
+     y="464.4787"
+     id="text10">+getBattery() : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="179.332"
+     x="153.92999"
+     y="478.44739"
+     id="text11">+setBattery(value : int) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="124.8457"
+     x="153.92999"
+     y="492.4162"
+     id="text12">+getStatus() : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="193.3242"
+     x="153.92999"
+     y="506.38489"
+     id="text13">+setStatus(value : String) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="166.02541"
+     x="153.92999"
+     y="520.3537"
+     id="text14">+getTasksCompleted() : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="152.10941"
+     x="153.92999"
+     y="534.32239"
+     id="text15">+getCurrentTask() : Task</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="180.39841"
+     x="153.92999"
+     y="548.2912"
+     id="text16">+getSensors() : List&lt;Sensor&gt;</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="118.3066"
+     x="153.92999"
+     y="562.25989"
+     id="text17">+getTeam() : Team</text>
+  <line
+     style="stroke:#000000;stroke-width:1"
+     x1="148.92999"
+     x2="356.23859"
+     y1="569.09003"
+     y2="569.09003"
+     id="line17" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="187.59959"
+     x="153.92999"
+     y="584.2287"
+     id="text18">+assignTask(task : Task) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="197.30859"
+     x="153.92999"
+     y="598.19739"
+     id="text19">+performTask(task : Task) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="110.291"
+     x="153.92999"
+     y="612.1662"
+     id="text20">+recharge() : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     font-style="italic"
+     lengthAdjust="spacing"
+     textLength="190.33591"
+     x="153.92999"
+     y="626.13489"
+     id="text21"
+     style="-inkscape-font-specification:'Hack, Normal';font-family:Hack;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:12px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000">+move(direction : String) : void</text>
+  <rect
+     fill="#ffffff"
+     height="217.625"
+     rx="2.5"
+     ry="2.5"
+     style="stroke:#000000;stroke-width:1;fill:none"
+     width="227.168"
+     x="12"
+     y="706.94"
+     id="rect21" />
+  <circle
+     cx="98.769501"
+     cy="719.94"
+     fill="#ffffff"
+     style="stroke:#000000;stroke-width:1"
+     id="ellipse21"
+     r="8" />
+  <path
+     d="m 101.8711,723.17435 q -0.5157,0.2813 -1.0782,0.4063 -0.5625,0.1406 -1.171799,0.1406 -1.8282,0 -2.8907,-1.0156 -1.0625,-1.0156 -1.0625,-2.7656 0,-1.75 1.0625,-2.7657 1.0625,-1.0156 2.8907,-1.0156 0.609299,0 1.171799,0.1406 0.5625,0.125 1.0782,0.4063 v 1.5 q -0.5313,-0.3594 -1.0469,-0.5156 -0.5,-0.1719 -1.062499,-0.1719 -1,0 -1.5781,0.6562 -0.5782,0.6407 -0.5782,1.7657 0,1.125 0.5782,1.7812 0.5781,0.6406 1.5781,0.6406 0.562499,0 1.062499,-0.1562 0.5156,-0.1719 1.0469,-0.5313 z"
+     fill="#000000"
+     id="path21" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     font-weight="bold"
+     lengthAdjust="spacing"
+     textLength="46.628899"
+     x="114.7695"
+     y="724.0943"
+     id="text22">Sensor</text>
+  <line
+     style="stroke:#000000;stroke-width:1"
+     x1="13"
+     x2="238.168"
+     y1="732.94"
+     y2="732.94"
+     id="line22" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="121.0137"
+     x="18"
+     y="748.07867"
+     id="text23">-sensorType : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="102.1465"
+     x="18"
+     y="762.04742"
+     id="text24">-rangeM : double</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="111.041"
+     x="18"
+     y="776.01617"
+     id="text25">-accuracy : double</text>
+  <line
+     style="stroke:#000000;stroke-width:1"
+     x1="13"
+     x2="238.168"
+     y1="782.84619"
+     y2="782.84619"
+     id="line25" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="157.17191"
+     x="18"
+     y="797.98492"
+     id="text26">+getSensorType() : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="140.3438"
+     x="18"
+     y="811.95367"
+     id="text27">+getRangeM() : double</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="208.8223"
+     x="18"
+     y="825.92242"
+     id="text28">+setRangeM(value : double) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="146.6895"
+     x="18"
+     y="839.89117"
+     id="text29">+getAccuracy() : double</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="215.168"
+     x="18"
+     y="853.85992"
+     id="text30">+setAccuracy(value : double) : void</text>
+  <line
+     style="stroke:#000000;stroke-width:1"
+     x1="13"
+     x2="238.168"
+     y1="860.69"
+     y2="860.69"
+     id="line30" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="99.275398"
+     x="18"
+     y="875.82867"
+     id="text31">+read() : double</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="195.79691"
+     x="18"
+     y="889.79742"
+     id="text32">+calibrate(offset : double) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="203.3848"
+     x="18"
+     y="903.76617"
+     id="text33">+equals(other : Sensor) : boolean</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="114.7617"
+     x="18"
+     y="917.73492"
+     id="text34">+toString() : String</text>
+  <rect
+     fill="#ffffff"
+     height="245.5625"
+     rx="2.5"
+     ry="2.5"
+     style="stroke:#000000;stroke-width:1;fill:none"
+     width="210.00591"
+     x="274.57999"
+     y="692.96997"
+     id="rect34" />
+  <circle
+     cx="360.37979"
+     cy="705.96997"
+     fill="#ffffff"
+     style="stroke:#000000;stroke-width:1"
+     id="ellipse34"
+     r="8" />
+  <path
+     d="m 363.48134,709.20442 q -0.5156,0.2812 -1.0781,0.4062 -0.5625,0.1406 -1.1719,0.1406 -1.8281,0 -2.8906,-1.0156 -1.0625,-1.0156 -1.0625,-2.7656 0,-1.75 1.0625,-2.7656 1.0625,-1.0157 2.8906,-1.0157 0.6094,0 1.1719,0.1407 0.5625,0.125 1.0781,0.4062 v 1.5 q -0.5312,-0.3594 -1.0468,-0.5156 -0.5,-0.1719 -1.0625,-0.1719 -1,0 -1.5782,0.6563 -0.5781,0.6406 -0.5781,1.7656 0,1.125 0.5781,1.7812 0.5782,0.6407 1.5782,0.6407 0.5625,0 1.0625,-0.1563 0.5156,-0.1719 1.0468,-0.5312 z"
+     fill="#000000"
+     id="path34" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     font-weight="bold"
+     lengthAdjust="spacing"
+     textLength="31.4063"
+     x="376.37979"
+     y="710.12433"
+     id="text35">Task</text>
+  <line
+     style="stroke:#000000;stroke-width:1"
+     x1="275.57999"
+     x2="483.58591"
+     y1="718.96997"
+     y2="718.96997"
+     id="line35" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="85.845703"
+     x="280.57999"
+     y="734.1087"
+     id="text36">-name : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="95.115196"
+     x="280.57999"
+     y="748.07739"
+     id="text37">-priority : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="115.0137"
+     x="280.57999"
+     y="762.0462"
+     id="text38">-durationS : double</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="68.501999"
+     x="280.57999"
+     y="776.01489"
+     id="text39">-points : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="88.6875"
+     x="280.57999"
+     y="789.9837"
+     id="text40">-status : String</text>
+  <line
+     style="stroke:#000000;stroke-width:1"
+     x1="275.57999"
+     x2="483.58591"
+     y1="796.81378"
+     y2="796.81378"
+     id="line40" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="122.0098"
+     x="280.57999"
+     y="811.95239"
+     id="text41">+getName() : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="129.5273"
+     x="280.57999"
+     y="825.9212"
+     id="text42">+getPriority() : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="198.00591"
+     x="280.57999"
+     y="839.88989"
+     id="text43">+setPriority(value : String) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="151.4297"
+     x="280.57999"
+     y="853.8587"
+     id="text44">+getDurationS() : double</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="102.9141"
+     x="280.57999"
+     y="867.82739"
+     id="text45">+getPoints() : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="124.8457"
+     x="280.57999"
+     y="881.7962"
+     id="text46">+getStatus() : String</text>
+  <line
+     style="stroke:#000000;stroke-width:1"
+     x1="275.57999"
+     x2="483.58591"
+     y1="888.62628"
+     y2="888.62628"
+     id="line46" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="112.5352"
+     x="280.57999"
+     y="903.76489"
+     id="text47">+complete() : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="95.355499"
+     x="280.57999"
+     y="917.7337"
+     id="text48">+cancel() : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="146.48441"
+     x="280.57999"
+     y="931.70239"
+     id="text49">+isComplete() : boolean</text>
+  <rect
+     fill="#ffffff"
+     height="231.5938"
+     rx="2.5"
+     ry="2.5"
+     style="stroke:#000000;stroke-width:1"
+     width="235.8398"
+     x="134.66"
+     y="12"
+     id="rect49" />
+  <circle
+     cx="230.617"
+     cy="25"
+     fill="#ffffff"
+     style="stroke:#000000;stroke-width:1"
+     id="ellipse49"
+     r="8" />
+  <path
+     d="m 233.7186,28.23445 q -0.5157,0.2812 -1.0782,0.4062 -0.5625,0.1406 -1.1718,0.1406 -1.8282,0 -2.8907,-1.0156 -1.0625,-1.0156 -1.0625,-2.7656 0,-1.75 1.0625,-2.7656 1.0625,-1.0157 2.8907,-1.0157 0.6093,0 1.1718,0.1407 0.5625,0.125 1.0782,0.4062 v 1.5 q -0.5313,-0.3594 -1.0469,-0.5156 -0.5,-0.1719 -1.0625,-0.1719 -1,0 -1.5781,0.6563 -0.5782,0.6406 -0.5782,1.7656 0,1.125 0.5782,1.7812 0.5781,0.6407 1.5781,0.6407 0.5625,0 1.0625,-0.1563 0.5156,-0.1719 1.0469,-0.5312 z"
+     fill="#000000"
+     id="path49" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     font-weight="bold"
+     lengthAdjust="spacing"
+     textLength="36.9258"
+     x="246.617"
+     y="29.154301"
+     id="text50">Team</text>
+  <line
+     style="stroke:#000000;stroke-width:1"
+     x1="135.66"
+     x2="369.49979"
+     y1="38"
+     y2="38"
+     id="line50" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="118.3477"
+     x="140.66"
+     y="53.138699"
+     id="text51">-teamName : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="130.623"
+     x="140.66"
+     y="67.107399"
+     id="text52">-robots : List&lt;Robot&gt;</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="99.386703"
+     x="140.66"
+     y="81.076202"
+     id="text53">-maxRobots : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="64.154297"
+     x="140.66"
+     y="95.044899"
+     id="text54">-score : int</text>
+  <line
+     style="stroke:#000000;stroke-width:1"
+     x1="135.66"
+     x2="369.49979"
+     y1="101.875"
+     y2="101.875"
+     id="line54" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="155.76559"
+     x="140.66"
+     y="117.0137"
+     id="text55">+getTeamName() : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="168.8203"
+     x="140.66"
+     y="130.98241"
+     id="text56">+getRobots() : List&lt;Robot&gt;</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="132.8438"
+     x="140.66"
+     y="144.9512"
+     id="text57">+getMaxRobots() : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="100.3125"
+     x="140.66"
+     y="158.91991"
+     id="text58">+getScore() : int</text>
+  <line
+     style="stroke:#000000;stroke-width:1"
+     x1="135.66"
+     x2="369.49979"
+     y1="165.75"
+     y2="165.75"
+     id="line58" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="193.37109"
+     x="140.66"
+     y="180.8887"
+     id="text59">+addRobot(robot : Robot) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="216.6152"
+     x="140.66"
+     y="194.85741"
+     id="text60">+removeRobot(robot : Robot) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="118.5879"
+     x="140.66"
+     y="208.8262"
+     id="text61">+totalBattery() : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="223.8398"
+     x="140.66"
+     y="222.79491"
+     id="text62">+getAvailableRobots() : List&lt;Robot&gt;</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="196.8105"
+     x="140.66"
+     y="236.7637"
+     id="text63">+updateScore(points : int) : void</text>
+  <path
+     codeLine="107"
+     d="m 193.55,645.36 c 0,24.87 0,37.97 0,61.27"
+     fill="none"
+     id="Robot-backto-Sensor"
+     style="stroke:#000000;stroke-width:1" />
+  <polygon
+     fill="#000000"
+     points="193.55,633.36 189.55,639.36 193.55,645.36 197.55,639.36 "
+     style="stroke:#000000;stroke-width:1"
+     id="polygon63" />
+  <polygon
+     fill="#000000"
+     points="150.1989,659.7383 152.55,666.9744 154.9011,659.7383 "
+     style="stroke:#000000;stroke-width:1"
+     id="polygon64"
+     transform="translate(50,6)" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="31.0137"
+     x="161.55"
+     y="667.12872"
+     id="text64"
+     transform="translate(50,6)">owns</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="7.6348"
+     x="183.7308"
+     y="652.29547"
+     id="text65"
+     transform="translate(-8.5271654)">1</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="21.2637"
+     x="176.95979"
+     y="695.95343"
+     id="text66"
+     transform="translate(-10)">1..*</text>
+  <path
+     codeLine="110"
+     d="m 252.58,256.02 c 0,19.07 0,27.15 0,47.14"
+     fill="none"
+     id="Team-backto-Robot"
+     style="stroke:#000000;stroke-width:1" />
+  <polygon
+     fill="none"
+     points="252.58,244.02 248.58,250.02 252.58,256.02 256.58,250.02 "
+     style="stroke:#000000;stroke-width:1"
+     id="polygon66" />
+  <polygon
+     fill="#000000"
+     points="187.58,270.5744 189.9311,263.3383 185.2289,263.3383 "
+     style="stroke:#000000;stroke-width:1"
+     id="polygon67"
+     transform="translate(76,6)" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="55.253899"
+     x="196.58"
+     y="270.7287"
+     id="text67"
+     transform="translate(76,6)">manages</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="22.898399"
+     x="229.9371"
+     y="262.6666"
+     id="text68"
+     transform="translate(-6)">0..1</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="21.2637"
+     x="231.07761"
+     y="293.0094"
+     id="text69"
+     transform="translate(-6)">1..*</text>
+  <path
+     codeLine="113"
+     d="m 315.91,633.36 c 0,19.97 0,34.08 0,53.29"
+     fill="none"
+     id="Robot-to-Task"
+     style="stroke:#000000;stroke-width:1" />
+  <polygon
+     fill="#000000"
+     points="315.91,692.65 319.91,683.65 315.91,687.65 311.91,683.65 "
+     style="stroke:#000000;stroke-width:1"
+     id="polygon69" />
+  <polygon
+     fill="#000000"
+     points="259.5589,652.7583 261.91,659.9944 264.2611,652.7583 "
+     style="stroke:#000000;stroke-width:1"
+     id="polygon70"
+     transform="translate(64,4)" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="44.666"
+     x="270.91"
+     y="660.14868"
+     id="text70"
+     transform="translate(64,4)">assigns</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="22.898399"
+     x="296.30139"
+     y="652.29547"
+     id="text71"
+     transform="translate(-8)">0..1</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="21.2637"
+     x="289.93539"
+     y="682.11359"
+     id="text72"
+     transform="translate(-1.860652)">0..*</text>
+  <path
+     d="m 232.15861,319.82445 q -0.5157,0.2812 -1.0782,0.4062 -0.5625,0.1406 -1.1718,0.1406 -1.8282,0 -2.8907,-1.0156 -1.0625,-1.0156 -1.0625,-2.7656 0,-1.75 1.0625,-2.7656 1.0625,-1.0157 2.8907,-1.0157 0.6093,0 1.1718,0.1407 0.5625,0.125 1.0782,0.4062 v 1.5 q -0.5313,-0.3594 -1.0469,-0.5156 -0.5,-0.1719 -1.0625,-0.1719 -1,0 -1.5781,0.6563 -0.5782,0.6406 -0.5782,1.7656 0,1.125 0.5782,1.7812 0.5781,0.6407 1.5781,0.6407 0.5625,0 1.0625,-0.1563 0.5156,-0.1719 1.0469,-0.5312 z"
+     fill="#000000"
+     id="path72" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;font-family:Hack;-inkscape-font-specification:'Hack, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5"
+     x="242.47702"
+     y="321.09"
+     id="text73"
+     inkscape:export-filename="/home/zeid/github/docs/enpm605-spring-2026-docs/docs/source/_static/images/L7/l7_relationships_light.png"
+     inkscape:export-xdpi="350"
+     inkscape:export-ydpi="350"><tspan
+       sodipodi:role="line"
+       id="tspan72"
+       x="242.47702"
+       y="321.09">Robot</tspan></text>
+  <rect
+     fill="#ffffff"
+     height="329.375"
+     rx="2.5"
+     ry="2.5"
+     style="stroke:#ffffff;stroke-width:1;fill:none;stroke-opacity:1"
+     width="209.30859"
+     x="680.44952"
+     y="320.03677"
+     id="rect73"
+     inkscape:export-filename="/home/zeid/github/docs/enpm605-spring-2026-docs/docs/source/_static/images/L7/l7_relationships_dark.png"
+     inkscape:export-xdpi="350"
+     inkscape:export-ydpi="350" />
+  <circle
+     cx="761.57654"
+     cy="333.03677"
+     fill="#ffffff"
+     style="stroke:#ffffff;stroke-width:1;fill:none;stroke-opacity:1"
+     id="circle73"
+     r="8" />
+  <line
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+     x1="681.44952"
+     x2="888.75812"
+     y1="346.03677"
+     y2="346.03677"
+     id="line73" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="85.845703"
+     x="153.92999"
+     y="344.7287"
+     id="text74"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-name : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="75.445297"
+     x="153.92999"
+     y="358.69739"
+     id="text75"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-battery : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="88.6875"
+     x="153.92999"
+     y="372.6662"
+     id="text76"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-status : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="128.60741"
+     x="153.92999"
+     y="386.63489"
+     id="text77"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-tasksCompleted : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="115.5352"
+     x="153.92999"
+     y="400.6037"
+     id="text78"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-currentTask : Task</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="144.2402"
+     x="153.92999"
+     y="414.57239"
+     id="text79"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-sensors : List&lt;Sensor&gt;</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="80.888702"
+     x="153.92999"
+     y="428.5412"
+     id="text80"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-team : Team</text>
+  <line
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+     x1="681.44952"
+     x2="888.75812"
+     y1="451.81796"
+     y2="451.81796"
+     id="line80" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="122.0098"
+     x="153.92999"
+     y="450.50989"
+     id="text81"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getName() : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="110.8535"
+     x="153.92999"
+     y="464.4787"
+     id="text82"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getBattery() : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="179.332"
+     x="153.92999"
+     y="478.44739"
+     id="text83"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+setBattery(value : int) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="124.8457"
+     x="153.92999"
+     y="492.4162"
+     id="text84"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getStatus() : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="193.3242"
+     x="153.92999"
+     y="506.38489"
+     id="text85"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+setStatus(value : String) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="166.02541"
+     x="153.92999"
+     y="520.3537"
+     id="text86"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getTasksCompleted() : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="152.10941"
+     x="153.92999"
+     y="534.32239"
+     id="text87"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getCurrentTask() : Task</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="180.39841"
+     x="153.92999"
+     y="548.2912"
+     id="text88"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getSensors() : List&lt;Sensor&gt;</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="118.3066"
+     x="153.92999"
+     y="562.25989"
+     id="text89"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getTeam() : Team</text>
+  <line
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+     x1="681.44952"
+     x2="888.75812"
+     y1="585.5368"
+     y2="585.5368"
+     id="line89" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="187.59959"
+     x="153.92999"
+     y="584.2287"
+     id="text90"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+assignTask(task : Task) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="197.30859"
+     x="153.92999"
+     y="598.19739"
+     id="text91"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+performTask(task : Task) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="110.291"
+     x="153.92999"
+     y="612.1662"
+     id="text92"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+recharge() : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     font-style="italic"
+     lengthAdjust="spacing"
+     textLength="190.33591"
+     x="153.92999"
+     y="626.13489"
+     id="text93"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:Hack;-inkscape-font-specification:'Hack, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1"
+     transform="translate(532.51951,16.446763)">+move(direction : String) : void</text>
+  <rect
+     fill="#ffffff"
+     height="217.625"
+     rx="2.5"
+     ry="2.5"
+     style="stroke:#ffffff;stroke-width:1;fill:none;stroke-opacity:1"
+     width="227.168"
+     x="544.51953"
+     y="723.38678"
+     id="rect93" />
+  <circle
+     cx="631.289"
+     cy="736.38678"
+     fill="#ffffff"
+     style="stroke:#ffffff;stroke-width:1;fill:none;stroke-opacity:1"
+     id="circle93"
+     r="8" />
+  <path
+     d="m 634.39061,739.62111 q -0.5157,0.2813 -1.0782,0.4063 -0.5625,0.1406 -1.1718,0.1406 -1.8282,0 -2.8907,-1.0156 -1.0625,-1.0156 -1.0625,-2.7656 0,-1.75 1.0625,-2.7657 1.0625,-1.0156 2.8907,-1.0156 0.6093,0 1.1718,0.1406 0.5625,0.125 1.0782,0.4063 v 1.5 q -0.5313,-0.3594 -1.0469,-0.5156 -0.5,-0.1719 -1.0625,-0.1719 -1,0 -1.5781,0.6562 -0.5782,0.6407 -0.5782,1.7657 0,1.125 0.5782,1.7812 0.5781,0.6406 1.5781,0.6406 0.5625,0 1.0625,-0.1562 0.5156,-0.1719 1.0469,-0.5313 z"
+     fill="#000000"
+     id="path93"
+     style="fill:#ffffff;fill-opacity:1" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     font-weight="bold"
+     lengthAdjust="spacing"
+     textLength="46.628899"
+     x="114.7695"
+     y="724.0943"
+     id="text94"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">Sensor</text>
+  <line
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+     x1="545.51953"
+     x2="770.6875"
+     y1="749.38678"
+     y2="749.38678"
+     id="line94" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="121.0137"
+     x="18"
+     y="748.07867"
+     id="text95"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-sensorType : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="102.1465"
+     x="18"
+     y="762.04742"
+     id="text96"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-rangeM : double</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="111.041"
+     x="18"
+     y="776.01617"
+     id="text97"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-accuracy : double</text>
+  <line
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+     x1="545.51953"
+     x2="770.6875"
+     y1="799.29297"
+     y2="799.29297"
+     id="line97" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="157.17191"
+     x="18"
+     y="797.98492"
+     id="text98"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getSensorType() : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="140.3438"
+     x="18"
+     y="811.95367"
+     id="text99"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getRangeM() : double</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="208.8223"
+     x="18"
+     y="825.92242"
+     id="text100"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+setRangeM(value : double) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="146.6895"
+     x="18"
+     y="839.89117"
+     id="text101"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getAccuracy() : double</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="215.168"
+     x="18"
+     y="853.85992"
+     id="text102"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+setAccuracy(value : double) : void</text>
+  <line
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+     x1="545.51953"
+     x2="770.6875"
+     y1="877.13678"
+     y2="877.13678"
+     id="line102" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="99.275398"
+     x="18"
+     y="875.82867"
+     id="text103"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+read() : double</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="195.79691"
+     x="18"
+     y="889.79742"
+     id="text104"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+calibrate(offset : double) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="203.3848"
+     x="18"
+     y="903.76617"
+     id="text105"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+equals(other : Sensor) : boolean</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="114.7617"
+     x="18"
+     y="917.73492"
+     id="text106"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+toString() : String</text>
+  <rect
+     fill="#ffffff"
+     height="245.5625"
+     rx="2.5"
+     ry="2.5"
+     style="stroke:#ffffff;stroke-width:1;fill:none;stroke-opacity:1"
+     width="210.00591"
+     x="807.09949"
+     y="709.41675"
+     id="rect106" />
+  <circle
+     cx="892.89929"
+     cy="722.41675"
+     fill="#ffffff"
+     style="stroke:#ffffff;stroke-width:1;fill:none;stroke-opacity:1"
+     id="circle106"
+     r="8" />
+  <path
+     d="m 896.00085,725.65118 q -0.5156,0.2812 -1.0781,0.4062 -0.5625,0.1406 -1.1719,0.1406 -1.8281,0 -2.8906,-1.0156 -1.0625,-1.0156 -1.0625,-2.7656 0,-1.75 1.0625,-2.7656 1.0625,-1.0157 2.8906,-1.0157 0.6094,0 1.1719,0.1407 0.5625,0.125 1.0781,0.4062 v 1.5 q -0.5312,-0.3594 -1.0468,-0.5156 -0.5,-0.1719 -1.0625,-0.1719 -1,0 -1.5782,0.6563 -0.5781,0.6406 -0.5781,1.7656 0,1.125 0.5781,1.7812 0.5782,0.6407 1.5782,0.6407 0.5625,0 1.0625,-0.1563 0.5156,-0.1719 1.0468,-0.5312 z"
+     fill="#000000"
+     id="path106"
+     style="fill:#ffffff;fill-opacity:1" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     font-weight="bold"
+     lengthAdjust="spacing"
+     textLength="31.4063"
+     x="376.37979"
+     y="710.12433"
+     id="text107"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">Task</text>
+  <line
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+     x1="808.09949"
+     x2="1016.1054"
+     y1="735.41675"
+     y2="735.41675"
+     id="line107" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="85.845703"
+     x="280.57999"
+     y="734.1087"
+     id="text108"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-name : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="95.115196"
+     x="280.57999"
+     y="748.07739"
+     id="text109"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-priority : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="115.0137"
+     x="280.57999"
+     y="762.0462"
+     id="text110"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-durationS : double</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="68.501999"
+     x="280.57999"
+     y="776.01489"
+     id="text111"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-points : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="88.6875"
+     x="280.57999"
+     y="789.9837"
+     id="text112"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-status : String</text>
+  <line
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+     x1="808.09949"
+     x2="1016.1054"
+     y1="813.26056"
+     y2="813.26056"
+     id="line112" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="122.0098"
+     x="280.57999"
+     y="811.95239"
+     id="text113"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getName() : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="129.5273"
+     x="280.57999"
+     y="825.9212"
+     id="text114"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getPriority() : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="198.00591"
+     x="280.57999"
+     y="839.88989"
+     id="text115"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+setPriority(value : String) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="151.4297"
+     x="280.57999"
+     y="853.8587"
+     id="text116"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getDurationS() : double</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="102.9141"
+     x="280.57999"
+     y="867.82739"
+     id="text117"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getPoints() : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="124.8457"
+     x="280.57999"
+     y="881.7962"
+     id="text118"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getStatus() : String</text>
+  <line
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+     x1="808.09949"
+     x2="1016.1054"
+     y1="905.07306"
+     y2="905.07306"
+     id="line118" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="112.5352"
+     x="280.57999"
+     y="903.76489"
+     id="text119"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+complete() : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="95.355499"
+     x="280.57999"
+     y="917.7337"
+     id="text120"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+cancel() : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="146.48441"
+     x="280.57999"
+     y="931.70239"
+     id="text121"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+isComplete() : boolean</text>
+  <rect
+     fill="#ffffff"
+     height="231.5938"
+     rx="2.5"
+     ry="2.5"
+     style="stroke:#ffffff;stroke-width:1;fill:none;stroke-opacity:1"
+     width="235.8398"
+     x="667.1795"
+     y="28.446762"
+     id="rect121" />
+  <circle
+     cx="763.13654"
+     cy="41.446762"
+     fill="#ffffff"
+     style="stroke:#ffffff;stroke-width:1;fill:none;stroke-opacity:1"
+     id="circle121"
+     r="8" />
+  <path
+     d="m 766.23811,44.681213 q -0.5157,0.2812 -1.0782,0.4062 -0.5625,0.1406 -1.1718,0.1406 -1.8282,0 -2.8907,-1.0156 -1.0625,-1.0156 -1.0625,-2.7656 0,-1.75 1.0625,-2.7656 1.0625,-1.0157 2.8907,-1.0157 0.6093,0 1.1718,0.1407 0.5625,0.125 1.0782,0.4062 v 1.5 q -0.5313,-0.3594 -1.0469,-0.5156 -0.5,-0.1719 -1.0625,-0.1719 -1,0 -1.5781,0.6563 -0.5782,0.6406 -0.5782,1.7656 0,1.125 0.5782,1.7812 0.5781,0.6407 1.5781,0.6407 0.5625,0 1.0625,-0.1563 0.5156,-0.1719 1.0469,-0.5312 z"
+     fill="#000000"
+     id="path121"
+     style="fill:#ffffff;fill-opacity:1" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     font-weight="bold"
+     lengthAdjust="spacing"
+     textLength="36.9258"
+     x="246.617"
+     y="29.154301"
+     id="text122"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">Team</text>
+  <line
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+     x1="668.1795"
+     x2="902.01929"
+     y1="54.446762"
+     y2="54.446762"
+     id="line122" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="118.3477"
+     x="140.66"
+     y="53.138699"
+     id="text123"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-teamName : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="130.623"
+     x="140.66"
+     y="67.107399"
+     id="text124"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-robots : List&lt;Robot&gt;</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="99.386703"
+     x="140.66"
+     y="81.076202"
+     id="text125"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-maxRobots : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="64.154297"
+     x="140.66"
+     y="95.044899"
+     id="text126"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">-score : int</text>
+  <line
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+     x1="668.1795"
+     x2="902.01929"
+     y1="118.32176"
+     y2="118.32176"
+     id="line126" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="155.76559"
+     x="140.66"
+     y="117.0137"
+     id="text127"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getTeamName() : String</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="168.8203"
+     x="140.66"
+     y="130.98241"
+     id="text128"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getRobots() : List&lt;Robot&gt;</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="132.8438"
+     x="140.66"
+     y="144.9512"
+     id="text129"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getMaxRobots() : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="100.3125"
+     x="140.66"
+     y="158.91991"
+     id="text130"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getScore() : int</text>
+  <line
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+     x1="668.1795"
+     x2="902.01929"
+     y1="182.19676"
+     y2="182.19676"
+     id="line130" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="193.37109"
+     x="140.66"
+     y="180.8887"
+     id="text131"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+addRobot(robot : Robot) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="216.6152"
+     x="140.66"
+     y="194.85741"
+     id="text132"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+removeRobot(robot : Robot) : void</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="118.5879"
+     x="140.66"
+     y="208.8262"
+     id="text133"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+totalBattery() : int</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="223.8398"
+     x="140.66"
+     y="222.79491"
+     id="text134"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+getAvailableRobots() : List&lt;Robot&gt;</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="196.8105"
+     x="140.66"
+     y="236.7637"
+     id="text135"
+     transform="translate(532.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">+updateScore(points : int) : void</text>
+  <path
+     codeLine="107"
+     d="m 726.06951,661.80676 c 0,24.87 0,37.97 0,61.27"
+     fill="none"
+     id="path135"
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1" />
+  <polygon
+     fill="#000000"
+     points="189.55,639.36 193.55,645.36 197.55,639.36 193.55,633.36 "
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+     id="polygon135"
+     transform="translate(532.51951,16.446763)" />
+  <polygon
+     fill="#000000"
+     points="152.55,666.9744 154.9011,659.7383 150.1989,659.7383 "
+     style="stroke:#ffffff;stroke-width:1;fill:#ffffff;fill-opacity:1;stroke-opacity:1"
+     id="polygon136"
+     transform="translate(582.51951,22.446763)" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="31.0137"
+     x="161.55"
+     y="667.12872"
+     id="text136"
+     transform="translate(582.51951,22.446763)"
+     style="fill:#ffffff;fill-opacity:1">owns</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="7.6348"
+     x="183.7308"
+     y="652.29547"
+     id="text137"
+     transform="translate(523.99234,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">1</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="21.2637"
+     x="176.95979"
+     y="695.95343"
+     id="text138"
+     transform="translate(522.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">1..*</text>
+  <path
+     codeLine="110"
+     d="m 785.09951,272.46676 c 0,19.07 0,27.15 0,47.14"
+     fill="none"
+     id="path138"
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1" />
+  <polygon
+     fill="none"
+     points="248.58,250.02 252.58,256.02 256.58,250.02 252.58,244.02 "
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1"
+     id="polygon138"
+     transform="translate(532.51951,16.446763)" />
+  <polygon
+     fill="#000000"
+     points="189.9311,263.3383 185.2289,263.3383 187.58,270.5744 "
+     style="stroke:#ffffff;stroke-width:1;fill:#ffffff;fill-opacity:1;stroke-opacity:1"
+     id="polygon139"
+     transform="translate(608.51951,22.446763)" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="55.253899"
+     x="196.58"
+     y="270.7287"
+     id="text139"
+     transform="translate(608.51951,22.446763)"
+     style="fill:#ffffff;fill-opacity:1">manages</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="22.898399"
+     x="229.9371"
+     y="262.6666"
+     id="text140"
+     transform="translate(526.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">0..1</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="21.2637"
+     x="231.07761"
+     y="293.0094"
+     id="text141"
+     transform="translate(526.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">1..*</text>
+  <path
+     codeLine="113"
+     d="m 848.42951,649.80676 c 0,19.97 0,34.08 0,53.29"
+     fill="none"
+     id="path141"
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1" />
+  <polygon
+     fill="#000000"
+     points="319.91,683.65 315.91,687.65 311.91,683.65 315.91,692.65 "
+     style="stroke:#ffffff;stroke-width:1;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+     id="polygon141"
+     transform="translate(532.51951,16.446763)" />
+  <polygon
+     fill="#000000"
+     points="261.91,659.9944 264.2611,652.7583 259.5589,652.7583 "
+     style="stroke:#ffffff;stroke-width:1;fill:#ffffff;fill-opacity:1;stroke-opacity:1"
+     id="polygon142"
+     transform="translate(596.51951,20.446763)" />
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="44.666"
+     x="270.91"
+     y="660.14868"
+     id="text142"
+     transform="translate(596.51951,20.446763)"
+     style="fill:#ffffff;fill-opacity:1">assigns</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="22.898399"
+     x="296.30139"
+     y="652.29547"
+     id="text143"
+     transform="translate(524.51951,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">0..1</text>
+  <text
+     fill="#000000"
+     font-family="Hack"
+     font-size="12px"
+     lengthAdjust="spacing"
+     textLength="21.2637"
+     x="289.93539"
+     y="682.11359"
+     id="text144"
+     transform="translate(530.65885,16.446763)"
+     style="fill:#ffffff;fill-opacity:1">0..*</text>
+  <path
+     d="m 764.67812,336.27121 q -0.5157,0.2812 -1.0782,0.4062 -0.5625,0.1406 -1.1718,0.1406 -1.8282,0 -2.8907,-1.0156 -1.0625,-1.0156 -1.0625,-2.7656 0,-1.75 1.0625,-2.7656 1.0625,-1.0157 2.8907,-1.0157 0.6093,0 1.1718,0.1407 0.5625,0.125 1.0782,0.4062 v 1.5 q -0.5313,-0.3594 -1.0469,-0.5156 -0.5,-0.1719 -1.0625,-0.1719 -1,0 -1.5781,0.6563 -0.5782,0.6406 -0.5782,1.7656 0,1.125 0.5782,1.7812 0.5781,0.6407 1.5781,0.6407 0.5625,0 1.0625,-0.1563 0.5156,-0.1719 1.0469,-0.5312 z"
+     fill="#000000"
+     id="path144"
+     style="fill:#ffffff;fill-opacity:1" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;font-family:Hack;-inkscape-font-specification:'Hack, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.5"
+     x="774.99652"
+     y="337.53677"
+     id="text145"
+     inkscape:export-filename="/home/zeid/github/docs/enpm605-spring-2026-docs/docs/source/_static/images/L7/l7_relationships_light.png"
+     inkscape:export-xdpi="350"
+     inkscape:export-ydpi="350"><tspan
+       sodipodi:role="line"
+       id="tspan144"
+       x="774.99652"
+       y="337.53677">Robot</tspan></text>
+</svg>

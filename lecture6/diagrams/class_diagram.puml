@@ -8,6 +8,21 @@ skinparam linetype ortho
 !theme mono
 
 ' ============================================================
+' Value Types
+' ============================================================
+class Position {
+    + x : double
+    + y : double
+}
+
+class Rectangle {
+    + x : double
+    + y : double
+    + width : double
+    + height : double
+}
+
+' ============================================================
 ' Abstract Base Class: Robot
 ' ============================================================
 abstract class Robot {
@@ -85,18 +100,19 @@ class Sensor {
 ' ============================================================
 class Task {
     - name : String
-    - priority : String
+    - priority : int
     - durationS : double
     - points : int
     - status : String
     --
     + getName() : String
-    + getPriority() : String
-    + setPriority(value : String) : void
+    + getPriority() : int
+    + setPriority(value : int) : void
     + getDurationS() : double
     + getPoints() : int
     + getStatus() : String
     --
+    + assign(robot : Robot) : void
     + complete() : void
     + cancel() : void
     + isComplete() : boolean
@@ -109,7 +125,6 @@ class Arena {
     - name : String
     - width : double
     - height : double
-    - robots : List<Robot>
     - obstacles : List<Position>
     - zones : Map<String, Rectangle>
     --
@@ -118,12 +133,9 @@ class Arena {
     + setWidth(value : double) : void
     + getHeight() : double
     + setHeight(value : double) : void
-    + getRobots() : List<Robot>
     + getObstacles() : List<Position>
     + getZones() : Map<String, Rectangle>
     --
-    + addRobot(robot : Robot) : void
-    + removeRobot(robot : Robot) : void
     + isClear(x : double, y : double) : boolean
     + getZone(name : String) : Rectangle
     + addObstacle(x : double, y : double) : void
@@ -169,5 +181,9 @@ Arena "1" o-- "0..*" Robot : contains >
 
 ' Association: Robot assigns Task
 Robot "0..1" --> "0..*" Task : assigns >
+
+' Value type usage (dashed dependency)
+Arena ..> Position : uses
+Arena ..> Rectangle : uses
 
 @enduml
